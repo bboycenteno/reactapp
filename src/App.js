@@ -47,10 +47,10 @@ function App() {
     await socket.emit("send_message", messageContent);
     setMessageList([...messageList, messageContent.content])
     setMessage("");
-    
+
     formRef.current.reset();
   };
-  //Returning HTML section
+  //Returning HTML section (1)
   return (
     <div>
     <Form  ref={formRef}>
